@@ -3,7 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import './bootstrap/css/bootstrap.min.css'  // 需要在mainjs中导入bootstrap框架
+import './bootstrap/jQuery.js'
+import './bootstrap/js/bootstrap.min.js'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

@@ -1,13 +1,24 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <Header/>
+    <Middle/>
+    <Footer/>
   </div>
 </template>
 
 <script>
+import Middle from '@/components/Middle'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'  // 此处必须使用@自动查找，不然报错
 export default {
-  name: 'App'
+  name: 'App',
+  data(){
+
+  },
+  components:{
+    Middle,Header,Footer
+  }
+
 }
 </script>
 
